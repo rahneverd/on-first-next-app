@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-// import { ThemeProvider } from '@/components/ThemeProvider';
+import { ThemeProvider } from '@/components/ThemeProvider';
 // import { Toaster } from '@/components/ui/toaster';
 // import AuthProvider from '@/components/AuthProvider';
 
@@ -20,21 +20,21 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        {/* <ThemeProvider
+        <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
-        > */}
-        {/* <AuthProvider> */}
-        {/* <NextSSRPlugin
+        >
+          {/* <AuthProvider> */}
+          {/* <NextSSRPlugin
 
               routerConfig={extractRouterConfig(ourFileRouter)}
             /> */}
-        {children}
-        {/* <Toaster richColors /> */}
-        {/* </AuthProvider> */}
-        {/* </ThemeProvider> */}
+          {children}
+          {/* <Toaster richColors /> */}
+          {/* </AuthProvider> */}
+        </ThemeProvider>
         {/* <Toaster /> */}
       </body>
     </html>
