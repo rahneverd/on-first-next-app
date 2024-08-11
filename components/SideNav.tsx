@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from './Logo';
 import NavLinks from './NavLinks';
-// import MoreDropdown from './MoreDropdown';
+import MoreDropdown from './MoreDropdown';
 import ProfileLink from './ProfileLink';
 // import { auth } from '@/auth';
 
@@ -20,7 +20,7 @@ async function SideNav() {
         {/* {user && <ProfileLink user={user} />}  */}
         <ProfileLink user={user} />
         <div className="hidden md:flex relative md:mt-auto flex-1 items-end w-full">
-          {/* <MoreDropdown /> */}
+          <MoreDropdown />
         </div>
       </div>
     </div>
